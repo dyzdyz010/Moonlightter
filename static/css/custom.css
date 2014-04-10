@@ -1,0 +1,368 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+/* 
+	Basic layouts 
+*/
+@font-face {
+  font-family: "Yue Yuan";
+  src: url("/static/fonts/RTWSYueRoudGoG0v1-Regular.ttf"); }
+
+html, body {
+  height: 100%;
+  margin: auto; }
+
+p {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  margin: 0.5em 0; }
+
+.warpper {
+  text-align: center;
+  margin: 0px auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300; }
+
+.title {
+  font-size: 55px;
+  margin-bottom: 0px; }
+
+.footer {
+  margin-top: 100px; }
+
+.footer p {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300; }
+
+.pure-menu a {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 400; }
+
+/**********************************************************
+	Form styles: 
+		legend
+		controllgroup
+		placeholder
+		text input
+		label
+		button
+		select
+		checkbox
+   ********************************************************
+*/
+.pure-form {
+  margin-top: 70px; }
+
+.pure-form legend {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 35px; }
+
+.pure-controll-group {
+  margin-bottom: 20px; }
+
+::-webkit-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 1.1em; }
+
+::-moz-placeholder {
+  font-family: "Open Sans";
+  font-size: 1.1em; }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 1.1em; }
+
+/* ie */
+input:-moz-placeholder {
+  font-family: "Open Sans";
+  font-size: 1.1em; }
+
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color] {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-radius: 1px;
+  border-color: #d1d1d1;
+  text-indent: 10px;
+  font-size: 1.3em;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-shadow: none;
+  -webkit-transition: 0.1s all ease;
+  -moz-transition: 0.1s all ease;
+  margin-bottom: 20px;
+  width: 30%;
+  height: 40px;
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 1.5em; }
+
+.pure-form input:focus:valid,
+.pure-form input:valid {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-radius: 1px;
+  border-color: #12c214; }
+
+.pure-form input:focus:invalid {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-radius: 1px;
+  border-color: #e82c4f; }
+
+.pure-form label {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-right: 10px; }
+
+.pure-form button {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 2.0em;
+  background-color: transparent;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease; }
+
+.pure-form button:hover {
+  background: transparent;
+  color: #0cbc88; }
+
+.pure-form button:active {
+  background: transparent;
+  box-shadow: none;
+  border: none; }
+
+.pure-form select {
+  background: transparent;
+  -webkit-appearance: none; }
+
+.pure-form input[type=checkbox] {
+  -webkit-appearance: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #999;
+  width: 1.0em;
+  height: 1.0em;
+  margin-bottom: 5px;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease; }
+
+.pure-form input[type=checkbox]:hover {
+  -webkit-appearance: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #129FEA;
+  width: 1.0em;
+  height: 1.0em; }
+
+.pure-form input[type=checkbox]:hover {
+  -webkit-appearance: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #129FEA;
+  width: 1.0em;
+  height: 1.0em; }
+
+.pure-form input[type=checkbox]:active, .pure-form input[type=checkbox]:checked:active {
+  -webkit-appearance: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #07a83a;
+  width: 1.0em;
+  height: 1.0em;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 0.1s ease; }
+
+.pure-form input[type=checkbox]:active, .pure-form input[type=checkbox]:checked:after {
+  content: '\2714';
+  color: #129FEA; }
+
+#warnmsg {
+  display: block;
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 1em;
+  color: #dc2b2b; }
+
+.pure-menu.pure-menu-open {
+  background: transparent; }
+
+.pure-menu li a:hover,
+.pure-menu li a:focus {
+  color: #56bedd;
+  background: transparent; }
+
+.pure-menu li a {
+  transition: all 0.1s ease-in-out; }
+
+div.pure-menu ul ul {
+  background-color: rgba(255, 255, 255, 0.93);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-radius: 5px;
+  left: auto;
+  top: auto;
+  margin-right: 15px;
+  float: right;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out; }
+
+div.pure-menu ul ul li {
+  text-align: right; }
+
+div.pure-menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  display: block; }
+
+div.pure-menu li ul {
+  transition: all 0.1s ease-in-out; }
+
+.user-controll {
+  float: right; }
+
+/**********************************************************
+	Color picker page styles: 
+		workspace
+		gradient box
+		hue bar div
+		color present div
+		present table
+        quick color, static color
+   ********************************************************
+*/
+.workspace {
+  display: block;
+  margin-top: 40px; }
+
+#gradientBox {
+  position: relative;
+  display: inline-block;
+  left: 0%;
+  width: 256px;
+  height: 256px;
+  background-color: #ff0000; }
+
+#hueBarDiv {
+  position: relative;
+  display: inline-block;
+  left: 20px;
+  width: 19px;
+  height: 256px;
+  background-image: url("/static/img/color_picker_bar.png"); }
+
+#presentDiv {
+  position: relative;
+  display: inline-block;
+  left: 30px;
+  height: 256px; }
+
+#presentDiv table {
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  top: 10px; }
+
+#presentDiv table tr {
+  line-height: 50px; }
+
+#presentDiv table td {
+  padding-left: 10px;
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 1.1em; }
+
+#presentDiv table input {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  width: 75px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #d1d1d1;
+  border-radius: 1px;
+  -webkit-transition: 0.1s all ease;
+  -moz-transition: 0.1s all ease; }
+
+#presentDiv table input:first-child {
+  width: 85px; }
+
+#presentDiv table input:focus {
+  outline: none;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #56bedd;
+  border-radius: 1px; }
+
+#colorPreviewDiv {
+  position: relative;
+  display: block;
+  left: 0px; }
+
+#quickColor, #staticColor {
+  position: relative;
+  display: inline-block;
+  background-color: #dc4d4d;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 40px; }
+
+/**********************************************************
+	User collection page styles: 
+		
+   ********************************************************
+*/
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 177px;
+  margin-right: 50px;
+  margin-bottom: 30px; }
+
+.tilecolor {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  background-size: 100px, 100px; }
+
+.tilecolor:hover {
+  opacity: 0.8;
+  background-image: url("/static/img/delete.png"); }
+
+.tilename {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 1.7em; }
+
+.tilehex {
+  font-family: "Open Sans";
+  color: #999;
+  font-weight: 300;
+  font-size: 1.1em; }
